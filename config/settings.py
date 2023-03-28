@@ -25,7 +25,8 @@ SECRET_KEY = "django-insecure-et#xme@&+^t6fg1a4&lr8--p)l=ae%(t3ci$bb!&abdo2fvp5v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# 보안상 좋지 않지만 토이프로젝트 특성상 우선 전체 호스트에 가능하도록 설정
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +38,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
+    "sample",
 ]
 
 MIDDLEWARE = [

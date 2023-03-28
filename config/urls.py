@@ -19,5 +19,5 @@ from django.urls import path, include
 # 장고 url 정규화하는 과정에서 '/'를 붙여주므로 호출시에는 '/'강 없어도 맵핑된다.
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("sample-app/", include('sample-app.urls'))
+    path("sample/", include('sample.urls'))
 ]
