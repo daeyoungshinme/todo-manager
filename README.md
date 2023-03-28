@@ -30,10 +30,15 @@
 
 #### 프로젝트 API 개발 가이드
 - API 모델 생성
+  - 생성된 app model에 모델 설정
 - API Serialize 생성
+  - 설정한 모델에 json형식으로 시리얼라이저할 파일 생성 및 설정
 - API View 생성
+  - veiw 비지니스 로직 구현 및 앞에 생성한 모델과 시리얼라이즈를 이용해서 json형식의 response 리턴
 - API URL 생성
+  - 앞에서 구현한 view로 연동할 url구성후 view 호출
 - API 리턴 확인
+  - 브라우저에서 api 리턴 확인
 - API 설계서 작성
 - 추후 추가 구성
   - 배포구성
